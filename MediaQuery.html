@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <STYLE>
+        .box{
+            font-size: 72px;
+            text-align: center;
+            background-color: red;
+          display: none;
+            color: white;
+
+        }
+        @media only screen and (max-width:400px){/*  only screen to specipy that we are ot considering other medi types
+        
+         */
+        #box1{
+            display: block;
+        }}
+        @media only screen and (max-width:800px) and (min-width:700px){
+        #box2{
+            display: block;
+        }}
+        @media only screen and(max-width:700px) and (min-width:400px){
+        #box3{
+            display: block;
+        }}
+        @media only screen and (min-width:800px){
+        #box4{
+            display: block;
+        }}
+    </STYLE>
+
+</head>
+<body>
+    <div class="box" id="box1">I M FOR PHONE</div>
+    <div class="box" id="box2">I M FOR lAPTOP</div>
+    <div class="box" id="box3">I M FOR TABLET</div>
+    <div class="box" id="box4">I M FOR WIDESCREEN COMPUTER</div>
+</body>
+</html>

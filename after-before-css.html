@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selector</title>
+    <link rel="stylesheet" href="/particles.js-master/demo/css/style.css" /> 
+    <style>
+        section{
+            --box-color: blue;
+            --font-default: 10px;
+            display: flex;
+            flex-direction: column;
+           align-items: center;
+           color: white;
+           padding: 10px;
+        }
+       /*  section::before{
+            content: 'this is content';
+        }
+        section::after{
+            content: "this is after content";
+        } */
+        .navigation{
+            display: flex;
+            font-size: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        li{
+            list-style: none;
+            margin: 8px;
+            color: white;
+            font-weight: bold;
+        }
+        .data{
+            position: absolute;
+            top: 0%;
+            margin: auto;
+          
+
+            width: 100vw;
+         
+        }
+        .navbar{
+            display: flex;
+            justify-content: center;
+        }
+        .loo{
+            margin-top: 0%;
+            padding-top: 0%;
+            width: 100%;
+           
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-self: center;
+            background-color: white;
+            text-shadow: rgb(179, 29, 29) 3px 3px;
+            color:rgb(0, 0, 0);
+            opacity: 0.8;
+            display: none;
+           
+            
+        }
+        .loo1{
+            margin-top: 0%;
+            padding-top: 0%;
+            width: 100%;
+           
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-self: center;
+            background-color: white;
+            text-shadow: rgb(179, 29, 29) 3px 3px;
+            color:rgb(0, 0, 0);
+            opacity: 0.8;
+            display: none;
+            
+        }
+        @media only screen and (max-width: 359px) {
+            .loo1{
+                display: flex;
+            }
+            
+        }
+        @media only screen and (min-width: 359.2px) {
+            .loo{
+                display: flex;
+            }
+            
+        }
+        .logo{
+            background:url('/logo.png') no-repeat center center/cover;
+            width: 50px;
+            height: 50px;
+            margin-top: auto;
+            margin-bottom: auto;
+            opacity: 1;
+            
+
+        }
+        .logo1{
+            background:url('/hacker.png') no-repeat center center/cover;
+            width: 50px;
+            height: 50px;
+            margin-top: auto;
+            margin-bottom: auto;
+            opacity: 1;
+            
+           
+        }
+        
+        .title{
+            font-weight: bold;
+            color: rgb(223, 26, 26);
+         
+            opacity: 1;
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+   <div id="particles-js">
+</div>
+<div class="data">
+    <header>
+        <div class="loo">
+            <div class="logo1">
+
+            </div>
+            <div class="title">
+                <h1>&lt; Code&#64;Shobit&gt;</h1> 
+            </div>
+            <div class="logo">
+
+            </div>
+        </div>
+        <div class="loo1">
+            <div class="logo1">
+
+            </div>
+            <div class="title">
+                <h1>&lt;&#64;Shobit&gt;</h1> 
+            </div>
+            <div class="logo">
+
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul class='navigation'>
+                <li class="item">Home</li>
+                <li class="item">About </li>
+                <li class="item">Services</li>
+                <li class="item">Contact</li>
+                
+            </ul>
+        </nav>
+        <section>
+            <h1>Welcome to Coding World</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Voluptate reprehenderit cumque quos soluta autem cum, <br>
+                 iste velit repellendus quidem culpa eligendi nisi 
+                 adipisci maiores veniam exercitationem. Modi nam, amet <br>
+                 praesentium molestiae neque consectetur corrupti.
+                
+            </p>
+        </section>
+    </header>
+</div>
+
+    
+    <script src= 
+        "/particles.js-master/particles.js"> 
+    </script> 
+    <script src= 
+        "/particles.js-master/demo/js/app.js"> 
+    </script> 
+</body>
+</html>

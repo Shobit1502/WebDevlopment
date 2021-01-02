@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json in js</title>
+</head>
+<body>
+    <script>
+        let name={
+            nor: "shobit",
+            gfhe: "bot",
+            tree:"afhwhvwf"
+
+        }
+        console.log(name);
+        namestr=JSON.stringify(name);
+        console.log(namestr);
+        var newstr=namestr.replace("shobit","aditya");
+        console.log(newstr);
+        newjsonobj=JSON.parse(newstr);
+        console.log(newjsonobj);
+
+        
+    </script>
+</body>
+</html>

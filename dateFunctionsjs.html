@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date functionsjs</title>
+    <style>
+        .container{
+            background-color: rgb(104, 4, 4);
+            font-weight: bold;
+            font-size: 20px;
+            color: rgb(245, 242, 247);
+            text-align: center;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 id="date" class="kick">Hi How are you?</h3>
+    </div>
+    <script>
+        function getdate(){
+
+            let dat=new Date();
+            return dat;
+        }
+        setInterval(() => {
+            var now=getdate();
+           
+            /* document.getElementById('date').innerHTML=now */
+            var pit=document.getElementsByClassName('kick');
+            pit[0].innerHTML=now;
+        }, 1000);
+        var go=new Date(0);
+        console.log(go);
+        var go1=new Date(100000);
+        console.log(go1);
+        var go2=new Date("2019-04-30");
+        console.log(go2);
+        var go3=new Date(2020,4,23,12,34,12,345);
+        go3.setDate(34);
+        console.log(go3);
+        console.log(go3.getDate());
+        console.log(go3.getDay());
+        console.log(go3.getFullYear());
+        console.log(go3.getMinutes());
+        console.log(go3.getSeconds());
+
+    </script>
+</body>
+</html>

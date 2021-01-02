@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grids</title>
+    <style>
+        .container{
+            display: grid;
+           /*  grid-template-columns: 100px auto 100px;
+            grid-template-columns: 1fr 4fr 2fr;/* better for responsive design */ 
+            grid-gap: 1rem;
+
+
+          /*   grid-template-columns: repeat(4,2fr); */
+          grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+           /*  grid-template-rows: 1fr 4fr 1fr;
+            grid-auto-rows: 3fr; */
+            /* grid-row-gap: 1rem;
+            grid-column-gap: 2rem; */
+            /* justify-content: center; */
+           /*  align-items: center; */
+        }
+        .item{
+            background-color: palevioletred;
+            border:rgb(95, 11, 151) 2px solid;
+          
+        }
+        /* .item:first-child{
+           /*  grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3; */
+           /*  grid-column: 1 / span 3;
+            grid-row: 1 / span 3; 
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item1">i m grid item1</div>
+        <div class="item" id="item2">i m grid item2</div>
+        <div class="item" id="item3">i m grid item3</div>
+        <div class="item" id="item4">i m grid item4</div>
+        <div class="item" id="item5">i m grid item5</div>
+        <div class="item" id="item6">i m grid item6</div>
+        <div class="item" id="item7">i m grid item7</div>
+        <div class="item" id="item8">i m grid item8</div>
+        <div class="item" id="item9">i m grid item9</div>
+        <div class="item" id="item10">i m also grid item10</div>
+        <div class="item" id="item11">i m also grid item11</div>
+        <div class="item" id="item12">i m also grid item12</div>
+        <div class="item" id="item13">i m also grid item13</div>
+        <div class="item" id="item14">i m also grid item14</div>
+        <div class="item" id="item15">i m also grid item15</div>
+        <div class="item" id="item16">i m also grid item16</div>
+        <div class="item" id="item17">i m also grid item17</div>
+        <div class="item" id="item18">i m also grid item18</div>
+    </div>
+</body>
+</html>

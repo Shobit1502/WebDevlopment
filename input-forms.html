@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inputs and forms</title>
+</head>
+<body>
+    <h1>This Is HTML Forms Tutorial</h1>
+    <form action="backend.php" method="POST">
+        <div>
+            <label for="name">Name</label> <input type="text" name="myname" id="name">
+            <br> <br>
+         </div> 
+         <div>
+            <label for="role">Role</label>  <input type="text" name="myrole" id="role">
+            <br> <br>
+         </div> 
+         <div>
+            <label for="date">Date</label> <input type="date" name="mydate" id="date"><br> <br>
+         </div> 
+         <div>
+            Are u eligible?  <input type="checkbox" name="mycheckbox" checked><br> <br>
+         </div> 
+         <div>
+           Email:  <input type="email" name="myemail"><br> <br>
+         </div><br><br>
+         <div>
+           Write about yourself:--<br>
+           <textarea name="mytext" cols="32" rows="10"></textarea><br> <br>
+         </div>
+         <div>
+           <label for="car">Car</label>
+          <select name="mycar" id="car">
+              <option value="swift" selected>Swift</option>
+              <option value="Mercedes">Mercedes</option>
+              <option value="Zen">Zen</option>
+          </select><br><br>
+         </div>
+         
+         <div>
+           <input type="submit" value="Submit Now"><input type="reset" value="Reset Now"><br> <br>
+         </div>  
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alert confirm prompt</title>
+</head>
+<body>
+    <div class="container">
+        <div class="red">
+            <li id="name">item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+        </div>
+    </div>
+    <script>
+       /*  alert('This is a message'); */
+       let name=prompt("whiat is your name?","guest");
+       document.getElementById('name').innerHTML=name;
+       let conf=confirm("Do you really want to delete this post?");
+       console.log(conf);
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+div > p{
+yeh tab lagana hai if we want to target just next p after div
+}
+
+
+div + p{
+for v which has div as his predecessor
+}
+
+lets study attribute and nth child pseudo selector
+input[type='text']{
+
+}
+
+a[target]{
+    font-size:32px;
+    color:black;
+}
+a[target='_self']{
+    font-size:32px;
+    color:red;
+}
+
+
+li:nth-child(3){
+    color:cyan;
+}
+for every third child
+li:nth-child(3n+0){
+    color:cyan;
+}
+
